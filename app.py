@@ -23,7 +23,8 @@ st.sidebar.markdown("""
 """)
 
 # text_inputで1行の入力を受け付ける
-symbol = st.sidebar.text_input('(例: 7203.T)', placeholder='ティッカーシンボル')
+# AAPLを初期値として設定
+symbol = st.sidebar.text_input('(例: 7203.T)', value='AAPL', placeholder='ティッカーシンボル')
 
 # 期間設定
 st.sidebar.header('期間設定')
